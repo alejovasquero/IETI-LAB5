@@ -16,7 +16,15 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      iisLoggedIn: false, tasks: [], user: {
+      iisLoggedIn: false, tasks: [{
+        description: "test task",
+        responsible: {
+          name: "david",
+          email: "david@example.com"
+        },
+        status: "Ready",
+        dueDate: new Date()
+      }], user: {
         name: "", email: "", password: ""
       }
     };
@@ -46,7 +54,7 @@ class App extends React.Component {
       email: "david@example.com"
     }
     console.log(3)
-    this.setState({user: config});
+    this.setState({ user: config });
   }
 
   addTask(task) {
@@ -72,8 +80,8 @@ class App extends React.Component {
   }
 
 
-  handleUserConfig(config){
-    this.setState({user: config});
+  handleUserConfig(config) {
+    this.setState({ user: config });
     localStorage.setItem('username', config.name);
     localStorage.setItem('password', config.password);
   }
@@ -88,7 +96,7 @@ class App extends React.Component {
     )
 
     const TasksView = () => (
-      <Tasks tasks={this.state.tasks} user={this.state.user}/>
+      <Tasks tasks={this.state.tasks} user={this.state.user} />
     );
 
     const UserProfileComponent = () => (
@@ -110,7 +118,7 @@ class App extends React.Component {
                 <Route exact path="/user" component={UserProfileComponent} />
               </div>
 
-              
+
             }
 
             {

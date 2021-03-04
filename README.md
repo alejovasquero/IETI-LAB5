@@ -1,4 +1,9 @@
-[Firebase](https://task-planner-25eff.web.app/)
+## Credentials
+username: david
+password: vasquez
+
+
+LINK FOR [Firebase](https://task-planner-25eff.web.app/)
 
 [![Deployed to Heroku](https://www.herokucdn.com/deploy/button.png)](https://ietilab4-david.herokuapp.com/)
 
