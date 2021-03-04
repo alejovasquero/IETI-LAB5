@@ -1,3 +1,10 @@
+[Firebase](https://task-planner-25eff.web.app/)
+
+[![Deployed to Heroku](https://www.herokucdn.com/deploy/button.png)](https://ietilab4-david.herokuapp.com/)
+
+[![Deploy To Azure](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.svg?sanitize=true)](https://ietilab4-david.azurewebsites.net/)
+
+
 # 1.5 Task Planner PWA
 
 1. Find a suitable icon for your app and generate your app image resources using the following tool:
